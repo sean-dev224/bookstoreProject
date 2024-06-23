@@ -7,12 +7,12 @@ store = Bookstore.Bookstore()
 
 day = 1
 
-dayFilePath = "C:\Stuff\pythonProjects/bookstoreProject\day.txt"
+dayFilePath = "day.txt"
 with open(dayFilePath, "r") as dayFile:
     data = dayFile.read()
     day = int(data)
 
-filename = "C:/Stuff/pythonProjects/bookstoreProject/PythonProductInventory" + str(day) + ".csv"
+filename = "PythonProductInventory" + str(day) + ".csv"
 with open(filename, "r") as CSVFile:
     reader = csv.reader(CSVFile)    
 
