@@ -75,7 +75,7 @@ Select an option: """
         case 1:
             store.displayInventory()
             itemChoice = getIntInput(1, len(store.inventoryList), "Select the item to purchase: ")
-            print("There are " + store.inventoryList[itemChoice-1].quantity + " copies in stock")
+            print("There are " + str(store.inventoryList[itemChoice-1].quantity) + " copies in stock")
             quantityChoice = getIntInput(0, int(store.inventoryList[itemChoice-1].quantity), "Enter desired quantity: ")
             total = store.makePurchase(itemChoice, quantityChoice)
             print("Customer total is $" + str(total))
